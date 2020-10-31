@@ -1,0 +1,14 @@
+name: 'go action'
+description: 'Go commands.'
+inputs:
+  test_dir:  # id of input
+    description: 'Dir to execute test'
+    required: true
+    default: './'
+
+outputs:
+  code: # id of output
+    description: 'The time we greeted you'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
