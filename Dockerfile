@@ -6,4 +6,4 @@ RUN go get -u golang.org/x/lint/golint
 
 RUN chmod +x /*.sh
 
-ENTRYPOINT ["bash", "-c", "/entrypoint.sh"]
+CMD ["bash", "-c", "/entrypoint.sh"]
